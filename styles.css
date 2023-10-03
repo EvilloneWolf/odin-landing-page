@@ -10,26 +10,86 @@
     padding: 10px 20px;
     cursor: pointer;
 }
-
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: bisque;
+}
 header {
     display: flex;
     justify-content:space-between;
-    align-items: normal;
+    align-items:center;
+    background-color: aquamarine;
+    color:black;
 }
 
 nav ul {
     list-style-type: none;
-    padding: 5px;
-    margin: 5px;
+    
+    justify-content: flex-end;
 }
 
 nav ul li {
     display: inline;
-    margin-right: 10px;
+    margin: 20px;
 }
 
-#home {
+.home {
     display: flex;
-    align-items:center;
-    justify-content: center;
+    justify-content: space-between;
+}
+
+.home #home.text {
+    flex-wrap: wrap;
+    align-items: center;
+    text-align: justify;
+}
+.home #home-img {
+    align-items: center;
+}
+
+#about {
+    text-decoration: line-through;
+    text-shadow: #007BFF;
+    background-color: aqua;
+    color: #c20f0fe4;
+}
+.image-main {
+    text-align: center;
+}
+.image-main .image {
+    background-color: #001185;
+    color: #fff;
+    font-size: large;
+    font-weight: bold;
+    text-align: center;
+    padding: 20px 20px 0 20px;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+}
+
+.quote {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    font-size: large;
+    font-weight: bold;
+    font-style: italic;
+    background-color: azure;
+}
+
+#signup {
+    padding: 100px;
+    background-color: #001185;
+    color: aliceblue;
+    display: flex;
+    justify-content:space-evenly;
+    text-align: center;
+    flex-direction: column;
+}
+
+.footer .copyright {
+    text-align: center;
+    font-size: x-small;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
