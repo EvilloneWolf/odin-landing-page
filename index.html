@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <title>Oh! No!</title>
+    <script>
+        
+function scrollToTop() {
+    window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+    });
+}
+
+window.onscroll = function() {
+    const button = document.getElementById("goToTopBtn");
+    
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        button.style.display = "block";
+    } else {
+        button.style.display = "none";
+    }
+};
+
+    </script>
+</head>
+<body>
+    <header>
+        <h1>My Website's here!</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#images">Images</a></li>
+                <li><a href="#quotes">Quotes</a></li>
+                <li><a href="#signup">Signup</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <section id="home">
+            <h2>Welcome to My Website</h2>
+            <p>
+                Welcome to our website! We are a passionate team dedicated to providing you with the best experience.
+                Whether you're here to explore our products, learn about our services, or just browse, we're delighted to have you.
+            </p>
+            <p>
+                Our mission is to make your life easier and more enjoyable. We offer a wide range of services and products
+                designed to meet your needs. From top-quality products to expert services, we've got you covered.
+            </p>
+            <p>
+                Take your time to explore our website, and if you have any questions or need assistance, don't hesitate to
+                reach out to us. We're here to help you every step of the way.
+            </p>
+            <p>
+                Thank you for visiting, and we look forward to serving you!
+            </p>
+        </section>
+        
+        
+        <section id="about">
+            <h2>About Us</h2>
+            <p>
+                Welcome to our company! We are a team of dedicated professionals with a passion for what we do.
+            </p>
+            <p>
+                Our journey began several years ago with a simple idea: to provide exceptional products and services that
+                make a positive impact on people's lives. Since then, we have grown and evolved, but our commitment to
+                excellence remains unwavering.
+            </p>
+            <p>
+                What sets us apart is our relentless pursuit of innovation and customer satisfaction. We believe in going
+                above and beyond to meet your needs and exceed your expectations. Our team is comprised of experts in their
+                respective fields, working together to deliver the best solutions for you.
+            </p>
+            <p>
+                We are proud of our achievements, but we are even more excited about what the future holds. Our mission is
+                to continue pushing boundaries, embracing challenges, and providing you with the outstanding service and
+                products you deserve.
+            </p>
+            <p>
+                Thank you for choosing us. We look forward to serving you and being a part of your journey.
+            </p>
+        </section>
+        
+        <section id="images">
+            <h2>Portfolio</h2>
+            <div class="image-gallery">
+                <div class="image">
+                    <img src="https://images.wallpapersden.com/image/download/sad-anime-girl-walking_bWZla26UmZqaraWkpJRqZWWtamVl.jpg" alt="Image 1">
+                    <p>Random Image 1</p>
+                </div>
+                <div class="image">
+                    <img src="https://static.displate.com/avatars/2023-08-25/8758bf534729ed522749f438e9e5b354_c304a13d9257307b9e173fb8fe0afbda.jpg" alt="Image 2">
+                    <p>Random Image 2</p>
+                </div>
+                <div class="image">
+                    <img src="https://as2.ftcdn.net/v2/jpg/05/55/74/47/500_F_555744737_DxYkpEyaq1ZS3VMn5U1iH6FxhNK9BFoq.jpg" alt="Image 3">
+                    <p>Random Image 3</p>
+                </div>
+            </div>
+        </section>
+        
+        
+        <section id="quote">
+            <h2>Quotes By Famous People</h2>
+            <div class="quote">
+                <blockquote>
+                    "The only way to do great work is to love what you do." - Steve Jobs
+                </blockquote>
+            </div>
+            <div class="quote">
+                <blockquote>
+                    "In three words I can sum up everything I've learned about life: it goes on." - Robert Frost
+                </blockquote>
+            </div>
+            <div class="quote">
+                <blockquote>
+                    "Success is not final, failure is not fatal: It is the courage to continue that counts." - Winston Churchill
+                </blockquote>
+            </div>
+        </section>
+        
+
+        <section id="signup">
+            <h2>Sign Up Here!</h2>
+            <p>
+                Stay up-to-date with our latest news and updates by signing up for our newsletter. Simply provide your email
+                address below, and we'll keep you informed.
+            </p>
+            <form id="signup-form">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                <button type="submit">Sign Up</button>
+            </form>
+        </section>
+        <button id="goToTopBtn" onclick="scrollToTop()">Go to Top</button>
+
+    </main>
+</body>
+</html>
